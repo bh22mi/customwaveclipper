@@ -31,13 +31,13 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           Center(child: Image.asset('assets/login_screen.png')),
           ClipPath(
-            clipper: OrangePainter(),
+            clipper: BlueClipper(),
             child: Container(
               color: Colors.blue,
             ),
           ),
           ClipPath(
-            clipper: PurplePainter(),
+            clipper: GreenClipper(),
             child: Container(
               color: Colors.lightGreenAccent.withOpacity(0.7),
             ),
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class PurplePainter extends CustomClipper<Path> {
+class GreenClipper extends CustomClipper<Path> {
   @override
   getClip(Size size) {
     // TODO: implement getClip
@@ -76,7 +76,7 @@ class PurplePainter extends CustomClipper<Path> {
   bool shouldReclip(CustomClipper oldClipper) => false;
 }
 
-class OrangePainter extends CustomClipper<Path> {
+class BlueClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     // TODO: implement getClip
