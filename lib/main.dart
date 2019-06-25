@@ -1,8 +1,6 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:vector_math/vector_math.dart' as Vector;
 
 void main() => runApp(MyApp());
 
@@ -19,7 +17,6 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -45,51 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.lightGreenAccent.withOpacity(0.7),
             ),
           ),
-          // Padding(
-          //   padding: const EdgeInsets.symmetric(horizontal: 30.0),
-          //   child: Column(
-          //     mainAxisAlignment: MainAxisAlignment.center,
-          //     children: <Widget>[
-          //       SizedBox(
-          //         height: 80,
-          //       ),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       TextFormField(
-          //           keyboardType: TextInputType.emailAddress,
-          //           decoration: InputDecoration(
-          //               labelText: 'Email',
-          //               border: OutlineInputBorder(
-          //                   borderSide:
-          //                       BorderSide(color: Colors.black, width: 5.0)))),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       TextFormField(
-          //           obscureText: true,
-          //           decoration: InputDecoration(
-          //               labelText: 'Password',
-          //               border: OutlineInputBorder(
-          //                   borderSide: BorderSide(
-          //                       color: Colors.greenAccent, width: 5.0)))),
-          //       SizedBox(
-          //         height: 40,
-          //       ),
-          //       MaterialButton(
-          //         splashColor: Colors.lightGreenAccent,
-          //         color: Colors.lightBlue,
-          //         child: Text(
-          //           'Sign in',
-          //           style: TextStyle(color: Colors.white, fontSize: 20),
-          //         ),
-          //         minWidth: MediaQuery.of(context).size.width,
-          //         height: 55,
-          //         onPressed: () {},
-          //       )
-          //     ],
-          //   ),
-          // )
+         
         ],
       ),
     ));
